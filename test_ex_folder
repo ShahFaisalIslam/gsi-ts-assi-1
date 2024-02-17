@@ -2,5 +2,6 @@
 
 [ $# -ne 1 ] && exit
 
-cd ex${1}* && tsc && node app && cd ..
+[ -e "ex$1" ] || exit
+cd ex${1} && tsc && node app && cd ..
 
