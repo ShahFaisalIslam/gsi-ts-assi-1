@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[ $# -ne 1 ] && exit
+
+mkdir ex${1} && cd ex${1} || exit
+tsc --init
+npm init -y
+touch app.ts
+cd ..
+
