@@ -1,5 +1,6 @@
-let pizzas = ["fajita","bihari tikka","afghani tikka"];
-for (let pizza of pizzas) {
+let pizzas : string[] = ["fajita","bihari tikka","afghani tikka"];
+let pizza : string;
+for (pizza of pizzas) {
     // console.log(pizza);
     console.log("I like %s pizza.",pizza);
 }

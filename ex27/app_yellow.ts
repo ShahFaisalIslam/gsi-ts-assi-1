@@ -1,4 +1,4 @@
-let alien_color = "yellow";
+let alien_color : string = "yellow";
 if (alien_color == 'green')
     console.log("Player has earned 5 points!");
 else if (alien_color == 'yellow')

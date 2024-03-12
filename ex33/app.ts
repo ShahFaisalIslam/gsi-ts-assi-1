@@ -1,5 +1,6 @@
-let numbers = [1,2,3,4,5,6,7,8,9];
-for (let a_number of numbers) {
+let numbers : number[] = [1,2,3,4,5,6,7,8,9];
+let a_number : number;
+for (a_number of numbers) {
     if (a_number == 1) {
         console.log("%dst",a_number);
     } else if (a_number == 2) {

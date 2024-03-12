@@ -1,8 +1,9 @@
-let animals = ["ant","lion","eagle"];
-for (let animal of animals) {
+let animals : string[] = ["ant","lion","eagle"];
+let animal : string;
+for (animal of animals) {
     console.log(animal);
 }
-for (let animal of animals){
+for (animal of animals){
     console.log("%s is an amazing animal.",animal);
 }
 

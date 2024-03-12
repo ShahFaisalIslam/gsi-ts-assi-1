@@ -1,6 +1,6 @@
-let usernames = ["admin","root","viewonly","nobody","johndoe"];
+let usernames :string[] = ["admin","root","viewonly","nobody","johndoe"];
 while (usernames.length > 0) {
-    let username = usernames.shift();
+    let username : string = usernames.shift();
     if (username == "admin")
         console.log("Howdy admin! Fancy some wild wild tea?");
     else

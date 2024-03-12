@@ -1,6 +1,7 @@
 "use strict";
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (let a_number of numbers) {
+let a_number;
+for (a_number of numbers) {
     if (a_number == 1) {
         console.log("%dst", a_number);
     }

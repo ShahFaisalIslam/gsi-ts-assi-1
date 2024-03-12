@@ -1,4 +1,5 @@
-let names = ["Basit","Ahmed","Talha"];
-for (let name of names) {
-    console.log(name);
+let names : string[] = ["Basit","Ahmed","Talha"];
+let aName : string;
+for (aName of names) {
+    console.log(aName);
 }

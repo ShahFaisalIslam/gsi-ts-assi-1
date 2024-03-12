@@ -1,4 +1,4 @@
-let person = "faisal";
+let person : string = "faisal";
 console.log("Is person == 'faisal'? I predict True");
 console.log(person == "faisal");
 console.log("Is person == 'faisala'? I predict False");
