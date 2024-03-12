@@ -1,7 +1,7 @@
-let current_users = ["admin","root","viewonly","superuser","user"];
-let new_users = ["rock","user","superUser","dawn","chalk"];
-
-for (let new_user of new_users) {
+let current_users : string[] = ["admin","root","viewonly","superuser","user"];
+let new_users : string[] = ["rock","user","superUser","dawn","chalk"];
+let new_user : string;
+for (new_user of new_users) {
     if (current_users.includes(new_user.toLowerCase())) {
         console.log(new_user,"is available.");
     } else {

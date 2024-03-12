@@ -1,5 +1,6 @@
-let favorite_fruits = ["grapes","banana","orange"];
-let fruit = "apple";
+// TODO: Use function for printing fruit being liked
+let favorite_fruits : string[] = ["grapes","banana","orange"];
+let fruit : string = "apple";
 if (favorite_fruits.includes(fruit)) {
     console.log("You are really like %s%s",fruit,fruit[-1] == 's'?"":"s");
 }

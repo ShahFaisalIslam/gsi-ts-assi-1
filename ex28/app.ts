@@ -1,4 +1,4 @@
-let age = 78;
+let age : number = 78;
 let stage : string ;
 if (age < 2) {
     stage = "baby";
@@ -13,7 +13,7 @@ if (age < 2) {
 } else {
     stage = "elder";
 }
-let article = "a";
+let article :string = "a";
 if (stage[0].toLowerCase() == "a" ||
 stage[0].toLowerCase() == "e" ||
 stage[0].toLowerCase() == "i" ||

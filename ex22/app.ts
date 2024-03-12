@@ -1,9 +1,11 @@
-let models : string[]= ["Honda Civic","Buggati","Lamborghini","Tesla"];
+/*
+ * Assignability error
+ * This is the error of assigning wrong type of value to a variable.
+ * TypeScript despite being invalid does compile into a valid js file,
+ * so be careful with these errors. Ya akhi.
+ */
 
-for (let model of models) {
-    console.log("I would like to own a %s car.",model);
-}
-// This is the most I could find out about index assigning error.
-// Gives undefined, but does not trigger TypeScript error.
-// console.log("I would like to own a %s car",models[-77]);
-console.log("I would like to own a %s car",models[3]);
+let numberOfWings : string = "seven";
+/* The below has assignability error: Value of type number is being assigned
+   to a variable of type string*/
+numberOfWings = 7;

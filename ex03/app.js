@@ -4,7 +4,8 @@ console.log("Lowercase:%s", person.toLowerCase());
 console.log("Uppercase:%s", person.toUpperCase());
 let capitalize = true;
 let personTitleCased = "";
-for (let char of person) {
+let char;
+for (char of person) {
     if (capitalize) {
         personTitleCased += char.toUpperCase();
         capitalize = false;
