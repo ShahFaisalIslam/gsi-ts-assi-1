@@ -6,7 +6,8 @@ let lowerCasedName : string = casedName.toLowerCase();
 // Uppercase
 let upperCasedName : string = casedName.toUpperCase();
 // Titlecase
-function toTitleCase(input : string) : string {
+
+let titleCasedName : string = (function (input : string) : string {
     let result : string = input[0].toUpperCase();
     let setToUpperCase : boolean = false;
     for (let i : number = 1;i < input.length;i++) {
@@ -24,8 +25,7 @@ function toTitleCase(input : string) : string {
     }
     return result;
 }
-
-let titleCasedName : string = toTitleCase(casedName);
+)(casedName);
 
 console.log(`Input : ${casedName}`);
 console.log(`Lower cased : ${lowerCasedName}`);
