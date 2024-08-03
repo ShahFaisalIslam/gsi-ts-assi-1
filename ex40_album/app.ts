@@ -1,31 +1,22 @@
-function make_album(artist : string,title : string,amount : number = -1)
-{   
-    if (amount == -1)
-        return {artist : artist,title : title};
-    return {artist : artist,title : title,amount : amount};    
+interface Album {
+    artistName : string,
+    title: string,
+    noOfTitles?: number
+};
+
+function make_album(artistName : string, title: string, noOfTitles? : number): Album {
+    let newAlbum : Album = {
+        artistName : artistName,
+        title : title
+    };
+
+    if (typeof noOfTitles !== "undefined")
+        newAlbum.noOfTitles = noOfTitles;
+
+    return newAlbum;
 }
 
-let album_1 :{
-    artist: string,
-    title: string
-    amount?: number
-}= make_album("Junaid Jamshed","Badi Uz Zaman");
-let album_2  :{
-    artist: string,
-    title: string
-    amount?: number
-}= make_album("Abdul Rahman","Durood e Mustafa");
-let album_3  :{
-    artist: string,
-    title: string
-    amount?: number
-}= make_album("Mahmood Qureshi","Khatam e Anbiya");
-let album_4  :{
-    artist: string,
-    title: string,
-    amount?: number
-}= make_album("Yameen Yamaan","Yamaani",55);
-console.log(album_1);
-console.log(album_2);
-console.log(album_3);
-console.log(album_4);
+console.log(make_album("Junaid","CCNA"));
+console.log(make_album("Ibrahim","MPUDP"));
+console.log(make_album("Hasan","MQTT"));
+console.log(make_album("Wasif","So many",5));
