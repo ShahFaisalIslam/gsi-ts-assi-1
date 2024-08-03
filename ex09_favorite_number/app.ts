@@ -1,3 +1,3 @@
 let fav_no : number = 7;
-let message : string = "My favorite number is " + fav_no.toString();
+let message : string = `My favorite number is "${fav_no}"`;
 console.log(message);
