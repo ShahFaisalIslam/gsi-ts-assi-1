@@ -1,17 +1,33 @@
-let person : string = "shah faisal";
-console.log("Lowercase:%s",person.toLowerCase());
-console.log("Uppercase:%s",person.toUpperCase());
-let capitalize : boolean = true;
-let personTitleCased : string = "";
-let char : string;
-for (char of person) {
-    if (capitalize) {
-        personTitleCased += char.toUpperCase();
-        capitalize = false;
-        continue;
+// lowercase, UPPERCASE, and Titlecase
+
+let casedName : string = "ShAh FaisAL";
+// Lowercase
+let lowerCasedName : string = casedName.toLowerCase();
+// Uppercase
+let upperCasedName : string = casedName.toUpperCase();
+// Titlecase
+function toTitleCase(input : string) : string {
+    let result : string = input[0].toUpperCase();
+    let setToUpperCase : boolean = false;
+    for (let i : number = 1;i < input.length;i++) {
+        if (input[i] == " ") {
+            setToUpperCase = true;
+            result += input[i];
+            continue;
+        }
+        if (setToUpperCase) {
+            setToUpperCase = false;
+            result += input[i].toUpperCase();
+        } else {
+            result += input[i].toLowerCase();
+        }
     }
-    if (char == " ")
-        capitalize = true;
-    personTitleCased += char.toLowerCase();
+    return result;
 }
-console.log("Titlecase:%s",personTitleCased);
+
+let titleCasedName : string = toTitleCase(casedName);
+
+console.log(`Input : ${casedName}`);
+console.log(`Lower cased : ${lowerCasedName}`);
+console.log(`Upper cased : ${upperCasedName}`);
+console.log(`Title cased : ${titleCasedName}`);
