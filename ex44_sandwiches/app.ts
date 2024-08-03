@@ -1,4 +1,4 @@
-function summarize_sandwich(items : string[])
+function summarize_sandwich(...items : string[])
 {
     console.log("Items in the ordered sandwich:");
     let i : number;
@@ -7,6 +7,6 @@ function summarize_sandwich(items : string[])
     }
 }
 
-summarize_sandwich(["lettuce","mayyonaise","chicken"]);
-summarize_sandwich(["mayyonaise","chicken","bread"]);
-summarize_sandwich(["lettuce","ketchup","chicken","mustard sauce","butter","tomato"]);
+summarize_sandwich("lettuce","mayyonaise","chicken");
+summarize_sandwich("mayyonaise","chicken","bread");
+summarize_sandwich("lettuce","ketchup","chicken","mustard sauce","butter","tomato");
